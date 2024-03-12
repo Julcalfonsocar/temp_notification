@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  redis:
+    image: redis:6.2-alpine
+    container_name: myRedis
+    restart: always
+    ports:
+      - '6379:6379'
+    command: redis-server --loglevel warning --requirepass notificationms
+    volumes:
+      - C:\Users\Julian\Documents\financeUN_notification_ms\volumes:/data
+
+  notification-ms:
+    build: .
+    container_name: notification-ms
+    restart: always
+    ports:
+      - '8080:8080'
+    depends_on:
+      - redis
+    environment:
+      - SPRING_DATASOURCE_URL=redis://myRedis:6379
+      - SPRING_DATASOURCE_PASSWORD=notificationms
