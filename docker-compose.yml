@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.9'
 
 services:
   redis:
@@ -8,13 +8,11 @@ services:
     ports:
       - '6379:6379'
     command: redis-server --loglevel warning --requirepass notificationms
-    volumes:
-      - C:\Users\Julian\Documents\financeUN_notification_ms\volumes:/data
 
   notification-ms:
-    build: .
     container_name: notification-ms
-    restart: always
+    image: fun-notification-ms
+    build: .
     ports:
       - '8080:8080'
     depends_on:
