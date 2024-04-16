@@ -6,3 +6,6 @@ COPY target/financeUN_notification_ms-0.0.1-SNAPSHOT.jar notification-ms.jar
 
 # Comando para ejecutar la aplicación
 ENTRYPOINT ["java", "-jar", "notification-ms.jar"]
+
+# Especificar la red que se utilizará al ejecutar el contenedor
+CMD ["--network", "notification-network"]

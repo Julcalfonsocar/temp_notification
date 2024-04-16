@@ -8,6 +8,8 @@ services:
     ports:
       - '6379:6379'
     command: redis-server --loglevel warning --requirepass notificationms
+    networks:
+      - notification-network
 
   notification-ms:
     container_name: notification-ms
@@ -20,3 +22,9 @@ services:
     environment:
       - SPRING_DATASOURCE_URL=redis://myRedis:6379
       - SPRING_DATASOURCE_PASSWORD=notificationms
+    networks:
+      - notification-network
+
+networks:
+  notification-network:
+    driver: bridge

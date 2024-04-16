@@ -1,6 +1,11 @@
+C:\Users\Julian\Documents\financeUN_notification_ms\src\main\java\com\financeUN\financeUN_notification_ms\configurations\WebConfig.java
 C:\Users\Julian\Documents\financeUN_notification_ms\src\main\java\com\financeUN\financeUN_notification_ms\controllers\NotificationController.java
+C:\Users\Julian\Documents\financeUN_notification_ms\src\main\java\com\financeUN\financeUN_notification_ms\controllers\GlobalExceptionHandler.java
+C:\Users\Julian\Documents\financeUN_notification_ms\src\main\java\com\financeUN\financeUN_notification_ms\exceptions\NotificationNotFoundException.java
 C:\Users\Julian\Documents\financeUN_notification_ms\src\main\java\com\financeUN\financeUN_notification_ms\model\Notification.java
 C:\Users\Julian\Documents\financeUN_notification_ms\src\main\java\com\financeUN\financeUN_notification_ms\services\NotificationService.java
+C:\Users\Julian\Documents\financeUN_notification_ms\src\main\java\com\financeUN\financeUN_notification_ms\exceptions\NotificationNotViewedException.java
 C:\Users\Julian\Documents\financeUN_notification_ms\src\main\java\com\financeUN\financeUN_notification_ms\FinanceUnNotificationMsApplication.java
 C:\Users\Julian\Documents\financeUN_notification_ms\src\main\java\com\financeUN\financeUN_notification_ms\configurations\RedisConfig.java
+C:\Users\Julian\Documents\financeUN_notification_ms\src\main\java\com\financeUN\financeUN_notification_ms\services\NotificationServiceException.java
 C:\Users\Julian\Documents\financeUN_notification_ms\src\main\java\com\financeUN\financeUN_notification_ms\model\NotificationType.java
